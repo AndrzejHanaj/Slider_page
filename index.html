@@ -11,7 +11,30 @@
 
     <body>
 
-<link rel="app.js" href="app.js">
+        <main class="slider">
+            <section class="slider_container">
+                <button class="slider_button slider_button--prev" data-button-prev>prev</button>
+                <figure class="slide" data-slide></figure>
+                <button class="slider_button slider_button--next" data-button-next>next</button>
+            </section>
+        </main>
+
+<script src="./app.js"></script>
+<script>
+    const imageArr = [
+        './img/1.jpg',
+        './img/2.jpg',
+        './img/3.jpg',
+        './img/4.jpg',
+        './img/5.jpg',
+    ];
+
+    const slider = new Slider(imageArr);
+    slider.initializeSlider();
+
+</script>
+
+
     </body>
 
 </html>
