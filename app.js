@@ -14,17 +14,16 @@ class Slider {
     }
 
     initializeSlider(){
-        console.log('slider');
+        
         this.slide = document.querySelector(this.UiSelectors.slide);
         this.prevBtn = document.querySelector(this.UiSelectors.buttonPrev);
         this.nextBtn = document.querySelector(this.UiSelectors.buttonNext);
         const figure = document.getElementsByTagName('figure');
 
         this.image = document.createElement('img');
+        this.image.classList.add('slide_image')
         this.image.setAttribute('src', this.images[0]);
 
        this.slide.appendChild(this.image);
     }
 }
-
-// console.log('jaujass', new Slider());
