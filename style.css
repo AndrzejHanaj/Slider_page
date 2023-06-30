@@ -35,6 +35,17 @@ body{
 .slider_button:hover{
     background-color: black;
 }
+.slider_button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid #fff;
+    border-bottom: 0;
+    border-left: 0;
+    width: 20px;
+    height: 20px;
+}
 .slider_button--prev{
     left: 0;
 }
