@@ -30,6 +30,7 @@ class Slider {
     }
     changeSlide(index){
     this.currentSlide = index;
+    
     this.setSlideAtributes(index);
 
     }
@@ -44,3 +45,6 @@ class Slider {
     this.image.setAttribute('alt', `Slide ${index + 1}`);
     }
 }
+
+
+console.log(sliger);
